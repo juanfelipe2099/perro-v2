@@ -1,0 +1,76 @@
+// IA.scss
+
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Signika', sans-serif;
+}
+
+.container {
+  padding: 20px; /* Añade un espaciado interno para el contenido */
+  max-width: 1200px; /* Limita el ancho máximo del contenido */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  grid-template-rows: min-content 1fr; /* Una fila para el título y otra para las tarjetas */
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-items: center; 
+}
+
+.logo {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-container {
+  display: grid;
+  justify-content: center;
+  max-width: 800px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Crea columnas responsivas */
+  gap: 20px; /* Espaciado entre las tarjetas */
+  justify-items: center;
+  grid-auto-flow: row; 
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px; /* Espaciado entre las tarjetas */
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Signika';
+}
+
+/* Estilos responsive */
+@media screen and (max-width: 600px) {
+  .card-container {
+    max-width: 300px;
+    flex-direction: column;  
+  }
+  
+  .card {
+    margin: 10px auto; 
+  }
+
+  .logo{
+    margin-bottom: -10px;
+  }
+
+}

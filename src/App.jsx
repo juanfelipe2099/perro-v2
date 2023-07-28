@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import DogSize from './pages/DogSize';
 import IA from './pages/IA';
+import IAsize from './pages/IAsize';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
 					<Route path="/" element={<Home/>} />
 					<Route path="/dogsize" element={<DogSize/>} />
 					<Route path="/ia" element={<IA/>} />
+					<Route path="/iasize" element={<IAsize/>} />
 				</Routes>
 		</BrowserRouter>
   );
