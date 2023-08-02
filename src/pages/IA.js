@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import '../styles/IA.scss';
 
-const Home = () => {
+const IA = () => {
 	return (
   <div>
   <title>Calculadora</title>
@@ -29,4 +29,4 @@ const Home = () => {
 	);
 }
 
-export default Home;
+export default IA;

@@ -1,0 +1,66 @@
+// App.scss
+
+/* Estilos para el contenedor principal */
+.app {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Estilos para el título */
+  .title {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  /* Estilos para el contenido (columnas) */
+  .content {
+    display: flex;
+  }
+  
+  /* Estilos para la columna de video */
+  .video-section {
+    flex: 1;
+  }
+  
+  .video-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para las tarjetas */
+  .card-section {
+    flex: 1;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .card {
+    text-align: center;
+  }
+  
+  /* Estilos para el campo de entrada */
+  input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import '../styles/IAsize.scss';
 
-const Home = () => {
+const IAsize = () => {
 	return (
   <div>
   <title>Calculadora</title>
@@ -37,4 +37,4 @@ const Home = () => {
 	);
 }
 
-export default Home;
+export default IAsize;
