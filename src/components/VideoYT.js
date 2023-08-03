@@ -1,21 +1,28 @@
-import React from 'react';
+// components/VideoSection.js
 
-const VideoYT = () => {
+import React from 'react';
+import YouTube from 'react-youtube';
+
+const VideoSection = () => {
+  const videoId = 'jZGpkLElSu8'; // Reemplaza 'VIDEO_ID' con el ID del video de YouTube que deseas mostrar
+
+  const opts = {
+    height: '440',
+    width: '100%',
+    playerVars: {
+      // Opciones adicionales del reproductor de YouTube (opcional)
+      // Consulta la documentación de YouTube para ver más opciones: https://developers.google.com/youtube/player_parameters
+    },
+  };
+
   return (
     <div className="video-section">
       <div className="video-title">
-        <h2>¿Cómo lo mido?</h2>
+        <h2>¿Cómo mido a mi peludo?</h2>
       </div>
-      <iframe
-        width="100%"
-        height="315"
-        src="https://www.youtube.com/watch?v=6PRqTahF-CE"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe>
+      <YouTube videoId={videoId} opts={opts} />
     </div>
   );
 }
 
-export default VideoYT;
+export default VideoSection;

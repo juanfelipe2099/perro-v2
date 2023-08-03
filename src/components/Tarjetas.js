@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import Popup from '../components/PopUp';
 
 const CardSection = () => {
   const [inputValues, setInputValues] = useState({
-    card1: '',
-    card2: '',
-    card3: '',
+    cuello: '',
+    pecho: '',
+    lomo: '',
   });
+
+  const [tallaPerro, setTallaPerro] = useState('');
 
   const handleInputChange = (e) => {
     setInputValues({
@@ -14,11 +17,25 @@ const CardSection = () => {
     });
   };
 
+  const [showPopup, setShowPopup] = useState(false);
+
   const handleSaveClick = () => {
-    // Aquí puedes realizar la lógica para guardar las variables con nombres únicos.
-    // Puedes acceder a las variables ingresadas por el usuario utilizando inputValues.card1, inputValues.card2, inputValues.card3.
-    // Por ejemplo, puedes enviar los valores a una API, almacenarlos en el estado global, o realizar cualquier acción que desees.
-    console.log('Valores guardados:', inputValues);
+    const { cuello, pecho, lomo } = inputValues;
+    if (
+      cuello >= 20 && cuello <= 25 &&
+      pecho >= 30 && pecho <= 38 &&
+      lomo >= 20 && lomo <= 24
+    ) {
+      setTallaPerro('XS');
+      setShowPopup(true);
+    } else {
+      setTallaPerro('No sabemos');
+      setShowPopup(true);
+    }
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false); // Cerrar el PopUp cuando se haga clic en "Cerrar"
   };
 
   return (
@@ -27,8 +44,8 @@ const CardSection = () => {
         <h2>Contorno del cuello (cm)</h2>
         <input
           type="number"
-          name="card1"
-          value={inputValues.card1}
+          name="cuello"
+          value={inputValues.cuello}
           onChange={handleInputChange}
         />
       </div>
@@ -36,8 +53,8 @@ const CardSection = () => {
         <h2>Contorno del pecho (cm)</h2>
         <input
           type="number"
-          name="card2"
-          value={inputValues.card2}
+          name="pecho"
+          value={inputValues.pecho}
           onChange={handleInputChange}
         />
       </div>
@@ -45,12 +62,18 @@ const CardSection = () => {
         <h2>Largo del Lomo (cm)</h2>
         <input
           type="number"
-          name="card3"
-          value={inputValues.card3}
+          name="lomo"
+          value={inputValues.lomo}
           onChange={handleInputChange}
         />
       </div>
-      <button onClick={handleSaveClick}>Enviar</button>
+      <button className="send-button" onClick={handleSaveClick}>Enviar</button>
+      {showPopup && (
+        <Popup
+          message={`Talla del perro: ${tallaPerro}`}
+          onClose={handleClosePopup}
+        />
+      )}
     </div>
   );
 }
