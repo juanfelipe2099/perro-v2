@@ -24,7 +24,7 @@ const CardSection = () => {
   return (
     <div className="card-section">
       <div className="card">
-        <h2>Título Tarjeta 1</h2>
+        <h2>Contorno del cuello (cm)</h2>
         <input
           type="number"
           name="card1"
@@ -33,7 +33,7 @@ const CardSection = () => {
         />
       </div>
       <div className="card">
-        <h2>Título Tarjeta 2</h2>
+        <h2>Contorno del pecho (cm)</h2>
         <input
           type="number"
           name="card2"
@@ -42,7 +42,7 @@ const CardSection = () => {
         />
       </div>
       <div className="card">
-        <h2>Título Tarjeta 3</h2>
+        <h2>Largo del Lomo (cm)</h2>
         <input
           type="number"
           name="card3"
@@ -50,7 +50,7 @@ const CardSection = () => {
           onChange={handleInputChange}
         />
       </div>
-      <button onClick={handleSaveClick}>Guardar</button>
+      <button onClick={handleSaveClick}>Enviar</button>
     </div>
   );
 }

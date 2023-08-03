@@ -4,7 +4,7 @@ const VideoYT = () => {
   return (
     <div className="video-section">
       <div className="video-title">
-        <h2>Título de la Columna Izquierda</h2>
+        <h2>¿Cómo lo mido?</h2>
       </div>
       <iframe
         width="100%"
