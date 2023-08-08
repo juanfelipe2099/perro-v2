@@ -7,22 +7,24 @@ body {
   font-family: 'Signika', sans-serif;
 }
 
-.container {
+.container-iaproductos {
   padding: 20px; /* Añade un espaciado interno para el contenido */
   max-width: 1200px; /* Limita el ancho máximo del contenido */
   margin: 0 auto; /* Centra el contenido horizontalmente */
-  grid-template-rows: min-content 1fr; /* Una fila para el título y otra para las tarjetas */
-  align-items: center; /* Centra verticalmente los elementos */
-  justify-items: center; 
+  height: 100vh; /* Ajusta la altura para centrar todo el contenido */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente los elementos */
+  align-items: center;
 }
 
-.logo {
+.logo-iaproductos {
   font-size: 24px;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.card-container {
+.card-container-iaproductos {
   display: grid;
   justify-content: center;
   max-width: 800px;
@@ -32,7 +34,7 @@ body {
   grid-auto-flow: row; 
 }
 
-.card {
+.card-iaproductos {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +46,7 @@ body {
   margin: 10px; /* Espaciado entre las tarjetas */
 }
 
-.card img {
+.card-iaproductos img {
   width: 150px;
   height: 150px;
   object-fit: cover;
@@ -52,31 +54,32 @@ body {
   margin-bottom: 10px;
 }
 
-.card h2 {
+.card-iaproductos h2 {
   font-size: 16px;
   text-align: center;
   font-family: 'Signika';
 }
 
+.brand-logo-iaproductos {
+  width: 150px; /* Ajusta el ancho de la imagen según tus necesidades */
+  height: auto;
+  margin-bottom: 10px;
+
+  /* Anular los estilos predeterminados del navegador para la etiqueta img */
+  border: none;
+  display: block;
+}
+
 /* Estilos responsive */
 @media screen and (max-width: 600px) {
 
-  .container{
-    flex-direction: row;
+  .container-iaproductos {
+    height: auto; /* Ajusta la altura al contenido en lugar de usar 100vh */
   }
 
-
-  .card-container {
-    max-width: 300px;
-    flex-direction: column;  
-  }
-  
-  .card {
-    margin: 10px auto; 
-  }
-
-  .logo{
-    margin-bottom: -10px;
+  .card-container-iaproductos {
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
 
 }

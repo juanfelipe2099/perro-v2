@@ -1,26 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600&display=swap');
 
 /* style.css */
-.container {
+.container-ia {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 120vh;
   }
   
-  .logo {
+  .logo-ia {
     font-size: 24px;
     margin-bottom: 20px;
   }
   
-  .card-container {
+  .card-container-ia {
     display: flex;
     justify-content: space-between;
     width: 800px;
   }
   
-  .card {
+  .card-ia {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +31,7 @@
     cursor: pointer;
   }
   
-  .card img {
+  .card-ia img {
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -39,11 +39,55 @@
     margin-bottom: 10px;
   }
   
-  .card h2 {
+  .card-ia h2 {
     font-size: 16px;
     text-align: center;
     font-family: "Signika";
   }
+
+  .brand-logo-ia {
+    width: 150px; /* Ajusta el ancho de la imagen según tus necesidades */
+    height: auto;
+    margin-bottom: 10px; 
+    border: none;
+    display: block;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container-ia {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding-top: 20px;
+    }
+  
+    .brand-logo-ia {
+      max-height: 100px; /* Ajusta la altura máxima de la imagen según tus necesidades */
+      margin-bottom: 10px;
+    }
+  
+    .card-container-ia {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+  
+    .card-ia {
+      margin: 10px auto;
+    }
+  
+    .logo-ia {
+      margin-top: 20px; /* Ajustamos el espacio superior para el logo en dispositivos móviles */
+      margin-bottom: 10px; /* Ajustamos el espacio inferior para el logo en dispositivos móviles */
+    }
+  
+  }
+
+
 
 
   
