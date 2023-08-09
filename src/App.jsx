@@ -5,6 +5,7 @@ import IA from './pages/IA';
 import IAsize from './pages/IAsize';
 import IAproductos from './pages/IAproductos';
 import IAmedidas from './pages/IAmedidas';
+import IAGorras from './pages/IAGorras';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
 					<Route path="/iasize" element={<IAsize/>} />
 					<Route path="/iaproductos" element={<IAproductos/>} />
 					<Route path="/iamedidas" element={<IAmedidas/>} />
+					<Route path="/iagorras" element={<IAGorras/>} />
 				</Routes>
 		</BrowserRouter>
   );

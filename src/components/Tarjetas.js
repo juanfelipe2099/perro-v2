@@ -111,7 +111,7 @@ const CardSection = () => {
           onChange={handleInputChange}
         />
       </div>
-      <button className="send-button" onClick={handleSaveClick}>Enviar</button>
+      <button className="send-button" onClick={handleSaveClick}>Calcular</button>
       {showPopup && (
         <Popup
           message={`La talla de tu peludo es: ${tallaPerro}`}

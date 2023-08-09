@@ -11,7 +11,7 @@ const Home = () => {
   <img src="https://www.simonaspetspeople.com/wp-content/uploads/2023/01/Logo-Simonas-Pets-People-Registred-Negro-PNG.png" alt="Logo de la marca" className="brand-logo-iaproductos" />
     <h1 className="logo-iaproductos">¿Qué deseas comprar?</h1>
     <div className="card-container-iaproductos">
-      <Link className="card-iaproductos">
+      <Link to="/iagorras" className="card-iaproductos">
         <img src="https://www.simonaspetspeople.com/wp-content/uploads/2022/04/Gorra-basica-para-mascotas-Pepe-014-Simona%C2%B4s-Pets-People-1.jpg" />
         <h2>Gorras</h2>
       </Link>

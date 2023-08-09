@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600&display=swap');
+
+.medidagorra-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.title-gorra {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Signika';
+}
+
+.content-gorra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.gorra-image {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.card-gorra {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-gorra h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: 'Signika';
+}
+
+.card-gorra input {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  gap: 20px;
+  text-align: center;
+}
+
+.calculate-button-gorra {
+  padding: 10px 20px;
+  background-color: #e29e3f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Signika';
+  margin-left: 20px;
+}
+
+.calculate-button-gorra:hover {
+  background-color: #b39366;
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  position: relative;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  text-align: center;
+}
+
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .card-gorra {
+      display: flex;
+      flex-direction: column; /* Cambia la dirección de flex para apilar los elementos en dispositivos móviles */
+      align-items: center; /* Centra horizontalmente los elementos */
+    }
+  
+    .calculate-button-gorra {
+      margin-left: 0; /* Elimina el margen izquierdo en dispositivos móviles */
+      margin-top: 10px; /* Añade margen superior para separar el botón del input */
+    }
+  }

@@ -17,7 +17,7 @@ const Popup = ({ message, onClose }) => {
         <p>{message}</p>
         <div className="buttons">
           <a
-            href="https://example.com" // Reemplaza la URL con la dirección que desees
+            href="https://www.simonaspetspeople.com/" // Reemplaza la URL con la dirección que desees
             target="_blank"
             rel="noopener noreferrer"
             className="popup-link-button"
